@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:health_kangaroo_doctor/utils/app_styles.dart';
 
+import 'home_screen.dart';
+
 class MyAvailability extends StatefulWidget {
   const MyAvailability({Key? key}) : super(key: key);
 
@@ -17,6 +19,9 @@ class _MyAvailabilityState extends State<MyAvailability> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
+        }, icon: Icon(Icons.adaptive.arrow_back)),
         elevation: 0,
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,

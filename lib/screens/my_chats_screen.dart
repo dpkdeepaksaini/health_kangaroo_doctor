@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/app_styles.dart';
+import 'home_screen.dart';
 
 class MyChatScreen extends StatefulWidget {
   const MyChatScreen({super.key});
@@ -14,6 +15,9 @@ class _MyChatScreenState extends State<MyChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
+        }, icon: Icon(Icons.adaptive.arrow_back)),
         backgroundColor: Styles.lightGreyColor,
         foregroundColor: Colors.black,
         elevation: 1,

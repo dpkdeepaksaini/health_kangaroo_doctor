@@ -4,6 +4,7 @@ import 'package:health_kangaroo_doctor/screens/wallet/my_wallet_credited.dart';
 import 'package:health_kangaroo_doctor/screens/wallet/my_wallet_debited.dart';
 
 import '../utils/app_styles.dart';
+import 'home_screen.dart';
 
 class MyWalletScreen extends StatefulWidget {
   const MyWalletScreen({super.key});
@@ -65,6 +66,9 @@ class _MyWalletScreenState extends State<MyWalletScreen>
       length: 2,
       child: Scaffold(
           appBar: AppBar(
+            leading: IconButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
+            }, icon: Icon(Icons.adaptive.arrow_back)),
             backgroundColor: Styles.lightGreyColor,
             foregroundColor: Colors.black,
             elevation: 1,

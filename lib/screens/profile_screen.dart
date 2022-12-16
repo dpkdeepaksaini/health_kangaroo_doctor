@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:health_kangaroo_doctor/screens/home_screen.dart';
 import 'package:health_kangaroo_doctor/utils/app_styles.dart';
 import 'package:health_kangaroo_doctor/widgets/saved_textfield_widget.dart';
 
@@ -245,6 +246,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
+        }, icon: Icon(Icons.adaptive.arrow_back)),
           backgroundColor: Styles.lightGreyColor,
           foregroundColor: Colors.black,
           elevation: 1,

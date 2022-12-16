@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 
 import '../utils/app_styles.dart';
 import '../widgets/button_widget.dart';
+import 'home_screen.dart';
 
 class GenerateCouponScreen extends StatefulWidget {
   const GenerateCouponScreen({super.key});
@@ -16,6 +17,9 @@ class _GenerateCouponScreenState extends State<GenerateCouponScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
+        }, icon: Icon(Icons.adaptive.arrow_back)),
         backgroundColor: Styles.lightGreyColor,
         foregroundColor: Colors.black,
         elevation: 1,
