@@ -16,21 +16,14 @@ class _GenerateCouponScreenState extends State<GenerateCouponScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Styles.lightGreyColor,
-          foregroundColor: Colors.black,
-          elevation: 1,
-          title: const Text('Generate Coupon'),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.only(
-                right: 20,
-              ),
-              child: Icon(Icons.edit),
-            ),
-          ]),
+        backgroundColor: Styles.lightGreyColor,
+        foregroundColor: Colors.black,
+        elevation: 1,
+        title: const Text('Generate Coupon'),
+      ),
       body: SingleChildScrollView(
         child: SizedBox(
-          height: MediaQuery.of(context).size.height,
+          height: MediaQuery.of(context).size.height * 0.88,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

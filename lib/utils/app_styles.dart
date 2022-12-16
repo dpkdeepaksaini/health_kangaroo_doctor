@@ -24,4 +24,10 @@ class Styles {
   );
   static TextStyle smallGreyText =
       const TextStyle(fontSize: 12, color: Colors.black45);
+
+  static TextStyle mediumText = const TextStyle(
+    fontSize: 18,
+  );
+  static TextStyle largeText = const TextStyle(fontSize: 50);
+  static TextStyle greyText = const TextStyle(fontSize: 12, color: Colors.grey);
 }

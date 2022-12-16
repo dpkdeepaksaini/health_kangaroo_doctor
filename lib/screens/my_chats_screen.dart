@@ -14,18 +14,11 @@ class _MyChatScreenState extends State<MyChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Styles.lightGreyColor,
-          foregroundColor: Colors.black,
-          elevation: 1,
-          title: const Text('My Chats'),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.only(
-                right: 20,
-              ),
-              child: Icon(Icons.edit),
-            ),
-          ]),
+        backgroundColor: Styles.lightGreyColor,
+        foregroundColor: Colors.black,
+        elevation: 1,
+        title: const Text('My Chats'),
+      ),
       body: ListView.builder(
           itemCount: 4,
           itemBuilder: (context, int index) {
